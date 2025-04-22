@@ -54,4 +54,10 @@
   animation: bounce-top 1s ease-in-out;
 }
 
-
+.white-10 {
+  background-color: #ffffff10;
+}
+.white-100 {
+  background-color: #ffffff;
+  opacity: 1;
+}
