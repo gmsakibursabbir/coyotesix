@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoyoteSix</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="font-poppins text-black">
+     <!-- header start -->
+     <header class="bg-white/10">
+      <nav
+        class="container mx-auto flex items-center justify-between px-4 lg:px-12 py-3"
+      >
+        <!-- Logo -->
+        <a href="./index.html" class="flex-shrink-0">
+          <img
+            src="./img/header-logo.png"
+            alt="Logo"
+            class="max-w-14 max-h-14 md:max-h-16.5 md:max-w-16.5 rounded-full"
+          />
+        </a>
+
+        <!-- Navigation Links -->
+        <div id="nav-links" class="hidden md:flex space-x-8">
+          <a
+            href="./index.html"
+            class="text-black hover:text-primary font-medium uppercase"
+            >Home</a
+          >
+          <a
+            href="./about.html"
+            class="text-black hover:text-primary font-medium uppercase"
+            >About</a
+          >
+          <a
+            href="./resume.html"
+            class="text-black hover:text-primary font-medium uppercase"
+            >Resume</a
+          >
+          <a
+            href="./portfolio.html"
+            class="text-black hover:text-primary font-medium uppercase"
+            >Portfolio</a
+          >
+          <a
+            href="#"
+            class="text-black hover:text-primary font-medium uppercase"
+            >Gallery</a
+          >
+          <a
+            href="./contact.html"
+            class="text-black hover:text-primary font-medium uppercase"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Social Icons + Hamburger -->
+        <div class="flex items-center space-x-4">
+          <!-- Social Icons (hidden on mobile) -->
+          <div class="hidden md:flex space-x-3">
+            <a href="#" class="hover:animate-bounce-top">
+              <img
+                src="./img/facebook-header.svg"
+                alt="Facebook"
+                class="w-[23px]"
+              />
+            </a>
+            <a href="#" class="hover:animate-bounce-top">
+              <img
+                src="./img/instagram-header.svg"
+                alt="Instagram"
+                class="w-[23px]"
+              />
+            </a>
+            <a href="#" class="hover:animate-bounce-top">
+              <img
+                src="./img/twitter-header.svg"
+                alt="Twitter"
+                class="w-[23px]"
+              />
+            </a>
+            <a href="#" class="hover:animate-bounce-top">
+              <img
+                src="./img/youtube-header.svg"
+                alt="YouTube"
+                class="w-[23px]"
+              />
+            </a>
+          </div>
+
+          <!-- Hamburger Menu Button -->
+          <button
+            id="hamburger-button"
+            class="md:hidden text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col items-center bg-white shadow-md py-4 space-y-4"
+      >
+        <a
+          href="./index.html"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >Home</a
+        >
+        <a
+          href="./about.html"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >About</a
+        >
+        <a
+          href="./resume.html"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >Resume</a
+        >
+        <a
+          href="./portfolio.html"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >Portfolio</a
+        >
+        <a
+          href="#"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >Gallery</a
+        >
+        <a
+          href="./contact.html"
+          class="text-black hover:text-primary font-medium uppercase text-base"
+          >Contact</a
+        >
+      </div>
+    </header>
+    <!-- header end -->
+    <main>
+
+      <!-- banner start  -->
+      <section
+        class="banner bg-cover bg-110 bg-no-repeat bg-left-bottom relative pt-[135px] pb-[60px]"
+      >
+        <div class="container px-4 xl:px-12 mx-auto">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 items-center align-middle"
+          >
+            <div class="col-span-1 flex flex-wrap items-center align-middle">
+              <div class="lg:text-start text-center">
+                <h1 class="text-3xl md:text-5xl font-bold">Gary W. Rapoza</h1>
+                <p class="text-accent text-base font-medium mt-3">
+                  Video Content Creator | Digital Strategist | Storyteller
+                </p>
+                <ul
+                  class="flex flex-row lg:gap-6 gap-4 mt-8 lg:justify-start justify-center"
+                >
+                  <li>
+                    <a
+                      href="./img/Resume_for_Download.pdf"
+                      target="_blank"
+                      download
+                      class="md:w-36 max-w-auto bg-primary rounded-[5px] px-3 py-2 text-white text-[15px] font-medium uppercase text-center inline-block hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200"
+                    >
+                      DOWNLOAD CV
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="md:w-36 max-w-auto bg-secondary rounded-[5px] px-3 py-2 text-white text-[15px] font-medium uppercase text-center inline-block hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200"
+                      >PORTFOLIO</a
+                    >
+                  </li>
+                </ul>
+                <div class="mt-6">
+                  <h4 class="text-[15px] font-medium">
+                    Ready for my next mission:
+                  </h4>
+                  <h2 class="text-xl md:text-2xl font-medium">
+                    Explore. Inspire. Lead
+                  </h2>
+                  <p
+                    class="text-black md:text-base text-[15px] font-normal mt-2.5"
+                  >
+                    I’m a retired U.S. Paratrooper with 23 years of service, and
+                    now a passionate content creator. After years of military
+                    service, I’ve dedicated myself to telling stories that
+                    connect people with the outdoors. I’m driven by a passion
+                    for exploration, conservation, and family-oriented
+                    adventures. Through CoyoteSix, I’m not just documenting my
+                    journey but sharing lessons about the land, nature, and
+                    raising my young sons with the same love for the outdoors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 lg:block hidden">
+              <div class="">
+                <img
+                  src="./img/coyote-six-banner.png"
+                  alt="Banner Image"
+                  class="max-w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner end -->
+
+      <!-- About me start  -->
+      <section class="aboutMe pt-[118px] lg:pb-[140px] pb-20">
+        <div class="container px-4 xl:px-12 mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 gap-y-20">
+            <div class="col-span-1 lg:col-span-5">
+              <div class="text-center relative">
+                <img
+                  src="./img/user-image-one.png"
+                  alt="user-image-one"
+                  class="max-w-full mx-auto 2xl:w-auto xl:w-[310px] lg:w-[250px] w-[200px]"
+                />
+                <div class="absolute left-0 right-0 mx-auto -bottom-[8.5%]">
+                  <img
+                    src="img/frame.png"
+                    alt="frame"
+                    class="max-w-full mx-auto lg:w-auto w-[285px]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 lg:col-span-6">
+              <div class="">
+                <h2 class="text-primary text-3xl md:text-5xl font-semibold">
+                  About Me
+                </h2>
+                <p class="mt-3.5 text-black text-[15px] font-normal">
+                  I’m a retired U.S. Paratrooper with over two decades of
+                  service, including roles as a combat leader and criminal
+                  investigator. Early on, I earned my Bachelor of Science in
+                  Criminal Justice and spent years overseas—time that often
+                  meant missing key moments with my older children. Upon
+                  retiring, I knew it was time for a change: no more kicking
+                  down doors or chasing bad guys. Instead, I turned my focus
+                  fully toward family. <br />
+                  I’m incredibly fortunate to share this journey with my wife,
+                  whose strength, support, and love have been my foundation.
+                  Together, even later in life, we welcomed two young boys into
+                  our family. Raising my older kids through camping, fishing,
+                  and outdoor adventures was deeply rewarding; now, I’m thrilled
+                  to pass those same experiences to our youngest sons, often
+                  joined by their older siblings. <br />
+                  My passion for storytelling and the outdoors led me back to
+                  school, where I’m currently completing my BA in Communications
+                  and Media Technology, soon transitioning into a Master of Arts
+                  program. Through CoyoteSix, I’m merging storytelling,
+                  videography, and family adventures—creating engaging content
+                  designed to inspire families everywhere. <br />
+                  It’s proof that even an old dog can learn new tricks—and new
+                  adventures are always waiting.
+                </p>
+                <div class="flex flex-row flex-wrap gap-8 items-center mt-12">
+                  <a
+                    href=""
+                    class="w-36 max-w-auto bg-secondary rounded-[5px] px-4 py-2 text-white text-base font-medium uppercase text-center hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200"
+                    >PORTFOLIO</a
+                  >
+                  <ul class="flex flex-row flex-wrap gap-4">
+                    <li>
+                      <a
+                        href=""
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/facebook.svg"
+                          alt="facebook"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/coyotesixmedia/"
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/instagram.svg"
+                          alt="instagram"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/twitter.svg"
+                          alt="twitter"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@CoyoteSix"
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/youtube.svg"
+                          alt="youtube"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About me end -->
+      <!-- Services Offered start  -->
+      <section class="services pt-16 md:pb-[100px] pb-20 bg-secondary/10">
+        <div class="container mx-auto px-4 xl:px-12">
+          <h2
+            class="text-primary text-3xl md:text-5xl font-semibold text-center"
+          >
+            Services Offered
+          </h2>
+          <div
+            class="grid grid-cols-2 lg:grid-cols-5 xl:gap-x-12 gap-x-4 xl:gap-y-9 gap-y-4 md:mt-[70px] mt-10"
+          >
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/book-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Storytelling
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/movie-icon.png"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Video Production
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/edit-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Video Editing
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/drone-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Drone <br />
+                  Videography
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/history-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Project Management
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/team-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Team Leadership
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/writing-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Scriptwriting
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/music-icon.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Audio Production
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="w-full h-[200px] p-5 text-center flex gap-4 flex-col justify-center align-middle items-center bg-white rounded-[10px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] border border-secondary"
+              >
+                <img
+                  src="./img/livestream.svg"
+                  alt="book-icon"
+                  class="max-w-full mx-auto"
+                />
+                <h4 class="text-black text-base md:text-xl font-semibold">
+                  Livestream & Broadcast Production
+                </h4>
+              </div>
+            </div>
+            <!-- single item end  -->
+          </div>
+        </div>
+      </section>
+      <!-- Services Offered end -->
+
+      <!-- Portfolio start  -->
+      <section class="Portfolio md:py-[100px] py-20">
+        <div class="container mx-auto px-4 xl:px-12">
+          <div class="text-center">
+            <h2
+              class="text-primary text-3xl md:text-5xl font-semibold text-center"
+            >
+              Portfolio
+            </h2>
+            <p
+              class="max-w-full w-[985px] mx-auto text-center justify-start text-black text-base md:text-xl font-normal md:mt-7 mt-5"
+            >
+              Explore examples of my work, from Communications and Media
+              Technology projects to personal content highlighting my
+              storytelling, videography, and video-editing expertise.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-[60px]">
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="bg-stone-700/10 rounded-[10px] outline-2 outline-secondary"
+              >
+                <div
+                  class="md:aspect-[calc(4*3+1)/6.5] aspect-[calc(4*3+1)/9.5]"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/5kjWh8lBxC4?si=tQDMdbc8UdKEcAkL"
+                    title="YouTube video player"
+                    frameborder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="w-full h-full rounded-[10px] shadow-lg"
+                  ></iframe>
+                </div>
+                <div class="py-5 px-4 lg:px-6">
+                  <h2 class="text-black text-xl md:text-3xl font-bold mb-2">
+                    Portfolio Sizzle Reel
+                  </h2>
+                  <p class="text-black text-base md:text-xl font-normal">
+                    This fast-paced, upbeat video showcases my storytelling,
+                    motion graphics, and video-editing expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="bg-stone-700/10 rounded-[10px] outline-2 outline-secondary"
+              >
+                <div
+                  class="md:md:aspect-[calc(4*3+1)/6.5] aspect-[calc(4*3+1)/9.5]"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/5kjWh8lBxC4?si=tQDMdbc8UdKEcAkL"
+                    title="YouTube video player"
+                    frameborder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="w-full h-full rounded-[10px] shadow-lg"
+                  ></iframe>
+                </div>
+                <div class="py-5 px-4 lg:px-6">
+                  <h2 class="text-black text-xl md:text-3xl font-bold mb-2">
+                    Portfolio Sizzle Reel
+                  </h2>
+                  <p class="text-black text-base md:text-xl font-normal">
+                    This fast-paced, upbeat video showcases my storytelling,
+                    motion graphics, and video-editing expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="bg-stone-700/10 rounded-[10px] outline-2 outline-secondary"
+              >
+                <div
+                  class="md:md:aspect-[calc(4*3+1)/6.5] aspect-[calc(4*3+1)/9.5]"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/5kjWh8lBxC4?si=tQDMdbc8UdKEcAkL"
+                    title="YouTube video player"
+                    frameborder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="w-full h-full rounded-[10px] shadow-lg"
+                  ></iframe>
+                </div>
+                <div class="py-5 px-4 lg:px-6">
+                  <h2 class="text-black text-xl md:text-3xl font-bold mb-2">
+                    Portfolio Sizzle Reel
+                  </h2>
+                  <p class="text-black text-base md:text-xl font-normal">
+                    This fast-paced, upbeat video showcases my storytelling,
+                    motion graphics, and video-editing expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="col-span-1">
+              <div
+                class="bg-stone-700/10 rounded-[10px] outline-2 outline-secondary"
+              >
+                <div
+                  class="md:md:aspect-[calc(4*3+1)/6.5] aspect-[calc(4*3+1)/9.5]"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/5kjWh8lBxC4?si=tQDMdbc8UdKEcAkL"
+                    title="YouTube video player"
+                    frameborder="0"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="w-full h-full rounded-[10px] shadow-lg"
+                  ></iframe>
+                </div>
+                <div class="py-5 px-4 lg:px-6">
+                  <h2 class="text-black text-xl md:text-3xl font-bold mb-2">
+                    Portfolio Sizzle Reel
+                  </h2>
+                  <p class="text-black text-base md:text-xl font-normal">
+                    This fast-paced, upbeat video showcases my storytelling,
+                    motion graphics, and video-editing expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single item end  -->
+          </div>
+          <div class="text-center mt-12">
+            <a
+              href="https://www.youtube.com/@CoyoteSix"
+              target="_blank"
+              class="w-44 max-w-auto bg-secondary rounded-[5px] px-4 py-2 text-white text-base font-medium uppercase text-center inline-block hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200"
+              >View All</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio end -->
+
+      <!-- Get in touch... start  -->
+      <div class="getInTouch md:pb-[100px] pb-20">
+        <div class="container mx-auto px-4 xl:px-12">
+          <div
+            class="px-5 md:px-10 xl:px-14 md:py-20 py-10 bg-white rounded-2xl shadow-[0px_5px_20px_0px_rgba(0,0,0,0.15)] border border-secondary"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 md:gap-6 gap-10">
+              <div class="col-span-1 lg:col-span-5 flex flex-wrap items-center">
+                <div class="text-center lg:text-left">
+                  <h2 class="text-primary text-3xl md:text-5xl font-semibold">
+                    Get in touch...
+                  </h2>
+                  <p class="text-black text-base font-normal mt-7">
+                    Interested in collaborating, partnering, or exploring
+                    opportunities together? <br />
+                    Reach out—I look forward to connecting with you.
+                  </p>
+                  <ul class="flex flex-col gap-3 md:mt-[74px] mt-5">
+                    <li>
+                      <a
+                        href="tel: 702-540-3200"
+                        class="flex flex-row gap-3 items-center"
+                      >
+                        <img
+                          src="./img/phone.svg"
+                          alt="phone"
+                          class="max-w-full"
+                        />
+                        <span class="text-black text-base font-normal"
+                          >702-540-3200</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:abnVet@coyotesix.com"
+                        class="flex flex-row gap-3 items-center"
+                      >
+                        <img
+                          src="./img/mail.svg"
+                          alt="mail"
+                          class="max-w-full"
+                        />
+                        <span class="text-black text-base font-normal"
+                          >AbnVet@coyotesix.com</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="flex flex-row flex-wrap gap-4 mt-8">
+                    <li>
+                      <a
+                        href=""
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/facebook.svg"
+                          alt="facebook"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/coyotesixmedia/"
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/instagram.svg"
+                          alt="instagram"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/twitter.svg"
+                          alt="twitter"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@CoyoteSix"
+                        target="_blank"
+                        class="inline-block hover:translate-y-0.5 transform transition-all duration-200 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)]"
+                        ><img
+                          src="./img/youtube.svg"
+                          alt="youtube"
+                          class="max-w-full"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-1 lg:col-span-7">
+                <form action="">
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-5">
+                    <div class="col-span-2">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="w-full bg-white rounded-[5px] border border-secondary text-neutral-500 text-base font-normal tracking-wide px-4 md:px-[28px] md:py-[18px] py-3"
+                      />
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <input
+                        type="tel"
+                        placeholder="Phone"
+                        class="w-full bg-white rounded-[5px] border border-secondary text-neutral-500 text-base font-normal tracking-wide px-4 md:px-[28px] md:py-[18px] py-3"
+                      />
+                    </div>
+                    <div class="md:col-span-1 col-span-2">
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="w-full bg-white rounded-[5px] border border-secondary text-neutral-500 text-base font-normal tracking-wide px-4 md:px-[28px] md:py-[18px] py-3"
+                      />
+                    </div>
+                    <div class="col-span-2">
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="5"
+                        placeholder="Message"
+                        class="w-full bg-white rounded-[5px] border border-secondary text-neutral-500 text-base font-normal tracking-wide px-4 md:px-[28px] md:py-[18px] py-3"
+                      ></textarea>
+                    </div>
+                    <div class="col-span-2">
+                      <button
+                        type="submit"
+                        class="w-full max-w-auto bg-secondary text-white text-xl font-bold tracking-wider rounded-[5px] px-4 py-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 cursor-pointer"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Get in touch... end -->
+    </main>
+
+    <footer class="bg-[#7E7E7E]">
+      <div class="container mx-auto px-4 xl:px-12 py-9">
+        <div class="grid grid-cols-1 lg:grid-cols-12 md:gap-6 gap-y-10">
+          <div
+            class="col-span-1 lg:col-span-3 flex items-center flex-wrap justify-center"
+          >
+            <img
+              src="./img/footer-logo.png"
+              alt="footer-logo"
+              class="max-w-full"
+            />
+          </div>
+          <div
+            class="col-span-1 lg:col-span-9 flex md:flex-row flex-col flex-wrap justify-between items-start md:gap-4 gap-y-10"
+          >
+            <!-- single item start  -->
+            <div class="">
+              <h4 class="text-white md:text-3xl text-xl font-medium">
+                CONTACT
+              </h4>
+              <ul class="flex flex-col gap-3 mt-4">
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img
+                      src="./img/location.svg"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span class="group-hover:underline">Las Vegas, Nevada</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="tel:702-540-3200"
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img
+                      src="./img/whatsapp.svg"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span class="group-hover:underline">702-540-3200</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:AbnVet@coyotesix.com"
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/email.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline"
+                      >AbnVet@coyotesix.com</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- single item end  -->
+
+            <!-- single item start  -->
+            <div class="">
+              <h4 class="text-white md:text-3xl text-xl font-medium">
+                CONTACT
+              </h4>
+              <ul class="flex flex-col gap-3 mt-4">
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline">About</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline">Service</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline">Gallery</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline">Project</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- single item end  -->
+            <!-- single item start  -->
+            <div class="">
+              <h4 class="text-white md:text-3xl text-xl font-medium">
+                CONTACT
+              </h4>
+              <ul class="flex flex-col gap-3 mt-4">
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline"
+                      >Terms and Conditions</span
+                    >
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href=""
+                    class="flex flex-row gap-3 items-center text-white text-base md:text-xl font-normal group"
+                  >
+                    <img src="./img/arrow.svg" alt="phone" class="max-w-full" />
+                    <span class="group-hover:underline">Privacy Policy</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- single item end  -->
+          </div>
+        </div>
+      </div>
+      <!-- copyright  -->
+      <div class="text-center py-[18px] bg-black">
+        <p class="text-white md:text-xl text-base font-normal">
+          © <span id="year"></span> CoyoteSix | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-primary: #5c4033;
+  --color-secondary: #657252;
+  --color-accent: #191c24;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1536px;
+}
+
+.banner {
+  background-image: url(../img/banner-background.jpg);
+}
+.resume {
+  background-image: url(../img/resume.webp);
+}
+.about-bg {
+  background-image: url(../img/about-bg.webp);
+}
+
+@media (min-width: 1200px) {
+  .bg-110 {
+    background-size: 110%;
+  }
+}
+/* Define the bounce animation */
+@keyframes bounce-top {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Apply the animation on hover */
+.hover\:animate-bounce-top:hover {
+  animation: bounce-top 0.5s ease-in-out;
+}
+
+
